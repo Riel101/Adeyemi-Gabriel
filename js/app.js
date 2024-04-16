@@ -48,22 +48,13 @@ function sendMail() {
         "message": senderMessage.value
     };
 
-    emailjs.sendForm("service_5tkmm1g", "template_gy7au79", params).then(
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams).then(
+    emailjs.send("service_5tkmm1g", "template_gy7au79", params).then(
             (response) => {
-              console.log('SUCCESS!', response.status, response.text);
+              alert('Email Sent!', response.status, response.text);
             },
             (error) => {
-              console.log('FAILED...', error);
+              alert('Email not sent!', error);
             },
-        
-    //     sentMsg.classList.replace("translate-x-[100%]", "translate-x-[0%]"),
-
-    //     closeSentMsg.addEventListener('click', () => {
-    //     if(sentMsg.classList.contains("translate-x-[0%]")){
-    //         sentMsg.classList.replace("translate-x-[0%]", "translate-x-[100%]");
-    //     }
-    // })
         )
     }
     
