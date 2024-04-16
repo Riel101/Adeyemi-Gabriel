@@ -9,13 +9,23 @@
     <link rel="shortcut icon" href="./img/undraw_profile_pic_ic-5-t.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function emailFunc(){
+            emailjs.init({
+                publicKey: "MRDBzhQu1TzT4Bsdw",
+            });
+        })();
+    </script>
 </head>
-<body class="bg-gray-300 text-gray-800 select-none text-lg">
+<body class="bg-gray-300 text-gray-800 select-none text-lg relative">
 
     <header class="px-[5%] lg:px-[10%] bg-cover bg-no-repeat bg-fixed" style="background-image: url(./img/svg.png);" id="home">
         <nav class="flex justify-between items-center my-4">
-
-            <h1 class="uppercase text-orange-500 font-semibold italic cursor-pointer">Portfolio</h1>
+            
+            <h1 class="uppercase text-orange-500 font-semibold italic hover:font-bold cursor-pointer">Portfolio</h1>
 
                 <ul id="nav-links" class="hidden bg-gray-300 w-screen md:w-fit md:block md:static md:top-0 md:left-0 md:px-0 md:py-0 py-4 px-8 fixed top-0 left-0">
                     <div class="flex justify-between">
@@ -25,31 +35,33 @@
                             <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#portfolio">Portfolio</a></li>
                             <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#contact">Contact</a></li>
                         </span>
-    
-                        <span class="md:hidden inline hover:text-orange-500 transition ease-out duration-500">
-                            <span id="toggle-close" class="hidden"><i class="fas fa-x"></i></span>
+                        
+                        <span id="toggle-close" class="md:hidden inline hover:text-orange-500 transition ease-out duration-500 font-bold">
+                            X
                         </span>
                     </div>
                 </ul>
-    
-            <div class="md:hidden hover:text-orange-500 transition ease-out duration-500">
-                <span id="toggle-open"><i class="fas fa-bars"></i></span>
-            </div>
-    
-        </nav>
-
+                
+                <div class="md:hidden hover:text-orange-500 transition ease-out duration-500">
+                    <span id="toggle-open"><i class="fas fa-bars"></i></span>
+                </div>
+                
+            </nav>
+            
+        <div class="w-[40%] px-6 py-4 border-2 border-green-500 font-bold bg-green-500 bg-opacity-50 rounded fixed right-0 translate-x-[100%] transition duration-600 flex flex-row justify-between" id="sent-msg"><span>Email Sent!</span><span id="close-sent-msg" class="hover:text-gray-600 cursor-pointer hover:scale-110 transition duration-200 border border-black hover:border-gray-600 px-2">X</span></div>
+        
         <div class="py-4 flex flex-col-reverse md:flex-row items-center justify-between ">
-
-            <div class="md:text-left text-center">
+            
+            <div class="md:text-left text-center my-16">
                 <h1 class="font-bold sm:text-4xl text-3xl">Hi, I am <span class="text-orange-500 uppercase">Adeyemi Gabriel</span></h1>
                 <div class="md:my-4 my-2">
-                    <h3 class="font-bold sm:text-3xl text-2xl">A frontend Developer</h3>
+                    <h3 class="font-bold sm:text-3xl text-2xl">A Frontend Developer</h3>
                     <p class="font-semibold text-lg">I build value through quality design</p>
                     <div>
-                        <a class="text-blue-700 text-xl mr-2" href="https://www.facebook.com/profile.php?id=100091602442311"><i class="fab fa-facebook"></i></a>
-                        <a class="text-blue-400 text-xl mr-2" href="http://twitter.com/Gab_Riel101?t=QpyEvv7fmivZX5iFJVFFzQ&s=09"><i class="fab fa-twitter"></i></a>
-                        <a class="text-purple-800 text-xl mr-2" href="http://instagram.com/gab_riel101_?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
-                        <a class="text-blue-800 text-xl mr-2" href="https://www.linkedin.com/in/adeyemi-gabriel-a61b48228"><i class="fab fa-linkedin"></i></a>
+                        <a target="_blank" class="text-blue-700 text-xl mr-2" href="https://www.facebook.com/profile.php?id=100091602442311"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank" class="text-blue-400 text-xl mr-2" href="http://twitter.com/Gab_Riel101?t=QpyEvv7fmivZX5iFJVFFzQ&s=09"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" class="text-purple-800 text-xl mr-2" href="http://instagram.com/gab_riel101_?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" class="text-blue-800 text-xl mr-2" href="https://www.linkedin.com/in/adeyemi-gabriel-a61b48228"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <a target="_blank" href="https://wa.me/qr/SLAMC3KZSONPE1"><button class=" uppercase border border-orange-500 px-4 py-2 rounded text-orange-500 text-sm font-bold hover:bg-orange-500 hover:text-gray-300 transition ease-out duration-500">Hire Me</button></a>
@@ -73,7 +85,7 @@
                 <div class="w-[100%]">
                     <h3 class="font-bold text-xl text-orange-500 border-b border-orange-500 mb-8">About Me</h3>
 
-                    <p class="text-left"><span class="text-orange-500">Frontend Developer</span>, dependable, certified, trained to work in high stress environments and stay calm under pressure with effective team work to produce the best result for you. Seeking to leverage analytical skills and expertise in frontend tools to help you with your upcoming challenges.</p>
+                    <p class="text-left">Hi again. I am a professional  <span class="text-orange-500">Frontend Developer</span> who is dependable and trained to work in high stress environments and stay calm under pressure with effective team work to produce the best result for you. I am seeking to leverage analytical skills and expertise in frontend tools to help you with your upcoming challenges.</p>
                 </div>
             </div>
 
@@ -81,18 +93,18 @@
             <div class="my-10 mx-auto flex flex-col-reverse md:flex-row w-[90%] gap-10 items-center">
                 <div class="w-[100%]">
                     <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500 mb-8">Aquired Skills</h3>
-                
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos vel sunt fuga itaque ducimus, sit id. Cum adipisci porro quam eos, ipsa soluta. Voluptates, tempore modi. Deserunt, nemo eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus fuga deleniti asperiores vel eos reiciendis quidem, dolorem expedita. Impedit voluptatum voluptatem et nemo. Officia cum voluptatem iusto ducimus nisi.
+                    
+                    <p class="">I have worked and gained experience with industry standard frontend tools like HTML, Vanilla CSS, TailwindCSS, Bootstrap and JavaScript. I have learned through different unique experiences how to build a fully responsive website. I have learned so much from my experiences and would love to be a part of your success story. I am always eager to learn more because I love what I do, email me if you have anything in mind.
                     </p>
                 </div>
-
+                
                 <div class="w-[70%] xl:w-[40%] md:w-[100%] sm:mb-0 mb-8">
                     <img class="fill-current" src="./img/undraw_job_hunt_re_q203.svg" alt="Skills">
                 </div>
-
             </div>
+            
 
-            <!-- Download CV -->
+            <!-- What I do -->
             <div class=" w-[90%] my-10 mx-auto gap-10 flex flex-col md:flex-row items-center">
                 
                 <div class="w-[70%] ">
@@ -100,11 +112,11 @@
                 </div>
                 
                 <div class="w-[100%]">
-                    <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500">Download CV</h3>
+                    <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500">What do I do exactly?</h3>
+                    
+                    <p class="my-10">Sometimes, I am asked this question, and the basic answer is <span class="text-orange-500">I build websites</span>. Single paged website, portfolio website, personal website, website for an event, business website, commercial, industrial and any other website, I build them all. So yeah, I build websites. When you need a website -because you're gonna need one someday- don't hesitate to reach out to me.</p>
 
-                    <p class="my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor perferendis perspiciatis quae quas illum odit culpa. Veritatis explicabo, odio sint qui cum magnam, saepe maiores omnis a animi hic? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus consectetur quis ipsum modi. Dolores in ex tempora nemo, debitis, corporis dignissimos illum a vel fugiat doloremque praesentium accusamus veritatis dicta!</p>
-
-                    <button class=" uppercase border text-sm border-orange-500 px-4 py-2 rounded text-orange-500 font-bold hover:bg-orange-500 hover:text-gray-300 transition ease-out duration-500"><a href="">Download CV</a></button>
+                    <!-- <button class=" uppercase border text-sm border-orange-500 px-4 py-2 rounded text-orange-500 font-bold hover:bg-orange-500 hover:text-gray-300 transition ease-out duration-500"><a href="">Download CV</a></button> -->
                 </div>
 
             </div>
@@ -115,34 +127,35 @@
             <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500">My Projects</h3>
             <div class="flex flex-col md:flex-row mt-16 items-center">
                 <div class="md:w-[40%] w-[70%] my-8 overflow-hidden rounded-lg mx-4 hover:opacity-100 opacity-60 hover:scale-110 transition ease-out duration-500">
-                    <a href=""><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="Mailion"></a>
+                    <a target="_blank" href="https://riel101.github.io/Mailion/"><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="Mailion"></a>
                     <p class="text-center font-semibold capitalize">
                         Mailion
                     </p>
                 </div>
                 <div class="md:w-[40%] w-[70%] my-8 overflow-hidden rounded-lg mx-4 hover:opacity-100 opacity-60 hover:scale-110 transition ease-out duration-500">
-                    <a href="https://riel101.github.io/Learn-Frontend/"><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="frontend"></a>
+                    <a target="_blank" href="https://frontend-bootcamp-h5xp.vercel.app/#"><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="frontend"></a>
                     <p class="text-center font-semibold capitalize">Learn frontend</p>
                 </div>
                 <div class="md:w-[40%] w-[70%] my-8 overflow-hidden rounded-lg mx-4 hover:opacity-100 opacity-60 hover:scale-110 transition ease-out duration-500">
-                    <a href=""><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="img"></a>
+                    <a target="_blank" href=""><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="img"></a>
                     <p class="text-center font-semibold capitalize">Multi-Step From</p>
                 </div>
             </div>
             
         </section>
+        
 
         <section id="contact">
             <div class="my-16">
                 <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500 mb-8">Send Me a Message</h3>
-                <form action="#" class="text-center md:w-[70%] w-[100%] mx-auto flex flex-col justify-center">
+                <form class="text-center md:w-[70%] w-[100%] mx-auto flex flex-col justify-center">
                     <div class="my-3 flex flex-col sm:flex-row justify-between">
-                        <input type="text" placeholder="Name" class="sm:w-[95%] sm:mr-[5%] sm:mb-0 mb-3 bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500">
-                        <input class="sm:w-[95%] sm:ml-[5%] bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500" type="email" name="" id="" placeholder="Email">
+                        <input type="text" id="sender-name" name="sender-name" placeholder="Name" class="sm:w-[95%] sm:mr-[5%] sm:mb-0 mb-3 bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500">
+                        <input class="sm:w-[95%] sm:ml-[5%] bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500" type="email" id="sender-email" name="sender-email" placeholder="Email">
                     </div>
-                    <textarea class="bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none mb-6 outline-1 focus:outline-2 outline-orange-500 resize-none" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea id="email-message" class="bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none mb-6 outline-1 focus:outline-2 outline-orange-500 resize-none" name="email-message" cols="30" rows="10" placeholder="Your message..."></textarea>
                     <div>
-                        <input class="w-[50%] uppercase border text-sm border-orange-500 px-4 py-2 rounded text-orange-500 font-bold hover:bg-orange-500 hover:text-gray-300 transition ease-out duration-500" type="submit" value="Send">
+                        <input id="submitBtn" class="w-[50%] uppercase border text-sm border-orange-500 px-4 py-2 rounded text-orange-500 font-bold hover:bg-orange-500 hover:text-gray-300 cursor-pointer transition ease-out duration-500" type="submit" value="Send">
                     </div>
                 </form>
             </div>
@@ -150,9 +163,11 @@
 
     </main>
 
-    <!-- <div class="">
-        <i class="fas fa-arrow-up"></i>
-    </div> -->
+    <a href="#home" id="back-to-top" class="fixed hidden right-14 hover:text-gray-300 text-gray-800 bottom-24 p-2 hover:bg-orange-500 rounded animate-bounce cursor-pointer shadow-md shadow-gray-700 hover:animate-none bg-gray-300 transition duration-500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+          </svg>
+    </a>
 
     <footer class="bg-gray-800 text-gray-300 text-sm text-center py-4">
 
