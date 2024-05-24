@@ -13,7 +13,7 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function emailFunc(){
+        (function (){
             emailjs.init({
                 publicKey: "MRDBzhQu1TzT4Bsdw",
             });
@@ -29,13 +29,13 @@
 
                 <ul id="nav-links" class="hidden bg-gray-300 w-screen md:w-fit md:block md:static md:top-0 md:left-0 md:px-0 md:py-0 py-4 px-8 fixed top-0 left-0">
                     <div class="flex justify-between">
-                        <span>
+                        <span class="flex sm:flex-row flex-col gap-4">
                             <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#home">Home</a></li>
                             <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#about">About</a></li>
                             <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#portfolio">Portfolio</a></li>
                             <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#contact">Contact</a></li>
                         </span>
-                        
+                        <!-- download closebtn icon -->
                         <span id="toggle-close" class="md:hidden inline hover:text-orange-500 transition ease-out duration-500 font-bold">
                             X
                         </span>
@@ -135,8 +135,8 @@
                     <p class="text-center font-semibold capitalize">Learn frontend</p>
                 </div>
                 <div class="md:w-[40%] w-[70%] my-8 overflow-hidden rounded-lg mx-4 hover:opacity-100 opacity-60 hover:scale-110 transition ease-out duration-500">
-                    <a target="_blank" href=""><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="img"></a>
-                    <p class="text-center font-semibold capitalize">Multi-Step From</p>
+                    <a target="_blank" href="https://riel101.github.io/iSmart/"><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="img"></a>
+                    <p class="text-center font-semibold capitalize">iSmart</p>
                 </div>
             </div>
             
@@ -148,10 +148,10 @@
                 <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500 mb-8">Send Me a Message</h3>
                 <form class="text-center md:w-[70%] w-[100%] mx-auto flex flex-col justify-center">
                     <div class="my-3 flex flex-col sm:flex-row justify-between">
-                        <input type="text" id="sender-name" name="sender-name" placeholder="Name" class="sm:w-[95%] sm:mr-[5%] sm:mb-0 mb-3 bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500">
-                        <input class="sm:w-[95%] sm:ml-[5%] bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500" type="email" id="sender-email" name="sender-email" placeholder="Email">
+                        <input type="text" id="sender-name" name="sender-name" placeholder="Name" class="sm:w-[95%] sm:mr-[5%] sm:mb-0 mb-3 bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500" required>
+                        <input class="sm:w-[95%] sm:ml-[5%] bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500" type="email" id="sender-email" name="sender-email" placeholder="Email" required>
                     </div>
-                    <textarea id="email-message" class="bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none mb-6 outline-1 focus:outline-2 outline-orange-500 resize-none" name="email-message" cols="30" rows="10" placeholder="Your message..."></textarea>
+                    <textarea id="email-message" class="bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none mb-6 outline-1 focus:outline-2 outline-orange-500 resize-none" name="email-message" cols="30" rows="10" placeholder="Your message..." required></textarea>
                     <div>
                         <input id="submitBtn" class="w-[50%] uppercase border text-sm border-orange-500 px-4 py-2 rounded text-orange-500 font-bold hover:bg-orange-500 hover:text-gray-300 cursor-pointer transition ease-out duration-500" type="submit" value="Send">
                     </div>
