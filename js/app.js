@@ -50,16 +50,12 @@ function sendMail() {
 
     emailjs.send("service_5tkmm1g", "template_gy7au79", params).then(
             (response) => {
-              alert('Email Sent!', response.status, response.text);
-            },
-            (error) => {
-              alert('Email not sent!', error);
+              alert('Email Sent!', response.status);
             },
         )
     }
     
     
     submitBtn.addEventListener('click', () => {
-        // evt.preventDefault;
         sendMail();
     })
