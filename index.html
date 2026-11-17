@@ -1,181 +1,240 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adeyemi Gabriel</title>
+    <meta name="theme-color" content="#f8faff">
+    <meta name="description" content="Adeyemi Gabriel is an AI engineer and software developer building AI tools, integrations, automations, and thoughtful websites.">
+    <title>Adeyemi Gabriel — AI Engineer &amp; Software Developer</title>
+    <link rel="icon" href="./img/undraw_profile_pic_ic-5-t.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/output.css">
-    <link rel="shortcut icon" href="./img/undraw_profile_pic_ic-5-t.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function (){
-            emailjs.init({
-                publicKey: "MRDBzhQu1TzT4Bsdw",
-            });
-        })();
-    </script>
-</head>
-<body class="bg-gray-300 text-gray-800 select-none text-lg relative">
-
-    <header class="px-[5%] lg:px-[10%] bg-cover bg-no-repeat bg-fixed" style="background-image: url(./img/svg.png);" id="home">
-        <nav class="flex justify-between items-center my-4">
-            
-            <h1 class="uppercase text-orange-500 font-semibold italic hover:font-bold cursor-pointer">Portfolio</h1>
-
-                <ul id="nav-links" class="hidden bg-gray-300 w-screen md:w-fit md:block md:static md:top-0 md:left-0 md:px-0 md:py-0 py-4 px-8 fixed top-0 left-0">
-                    <div class="flex justify-between">
-                        <span class="flex sm:flex-row flex-col gap-4">
-                            <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#home">Home</a></li>
-                            <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#about">About</a></li>
-                            <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#portfolio">Portfolio</a></li>
-                            <li class="inline md:py-0 py-0 md:px-0 px-2 w-fit md:ml-4 hover:text-orange-500 hover:border-b-2 hover:border-orange-500 transition ease-out duration-500"><a href="#contact">Contact</a></li>
-                        </span>
-                        <!-- download closebtn icon -->
-                        <span id="toggle-close" class="md:hidden inline hover:text-orange-500 transition ease-out duration-500 font-bold">
-                            X
-                        </span>
-                    </div>
-                </ul>
-                
-                <div class="md:hidden hover:text-orange-500 transition ease-out duration-500">
-                    <span id="toggle-open"><i class="fas fa-bars"></i></span>
-                </div>
-                
-            </nav>
-        
-        <div class="py-4 flex flex-col-reverse md:flex-row items-center justify-between ">
-            
-            <div class="md:text-left text-center my-16">
-                <h1 class="font-bold sm:text-4xl text-3xl">Hi, I am <span class="text-orange-500 uppercase">Adeyemi Gabriel</span></h1>
-                <div class="md:my-4 my-2">
-                    <h3 class="font-bold sm:text-3xl text-2xl">A Frontend Developer</h3>
-                    <p class="font-semibold text-lg">I build value through quality design</p>
-                    <div>
-                        <a target="_blank" class="text-blue-700 text-xl mr-2" href="https://www.facebook.com/profile.php?id=100091602442311"><i class="fab fa-facebook"></i></a>
-                        <a target="_blank" class="text-blue-400 text-xl mr-2" href="http://twitter.com/Gab_Riel101?t=QpyEvv7fmivZX5iFJVFFzQ&s=09"><i class="fab fa-twitter"></i></a>
-                        <a target="_blank" class="text-purple-800 text-xl mr-2" href="http://instagram.com/gab_riel101_?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
-                        <a target="_blank" class="text-blue-800 text-xl mr-2" href="https://www.linkedin.com/in/adeyemi-gabriel-a61b48228"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <a target="_blank" href="https://wa.me/qr/SLAMC3KZSONPE1"><button class=" uppercase border border-orange-500 px-4 py-2 rounded text-orange-500 text-sm font-bold hover:bg-orange-500 hover:text-gray-300 transition ease-out duration-500">Hire Me</button></a>
-            </div>
-
-            <div class=" lg:w-[30%] w-[40%] my-4 rounded-full overflow-hidden">
-                <img class="fill-current" src="./img/Profile-pic.jpg" alt="Picture">
-            </div>
-
-        </div>
+    <script src="./js/gsap.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Adeyemi Gabriel home"><span class="monogram" aria-hidden="true">ag<span>↗</span></span><span>Adeyemi Gabriel<span class="brand-role">AI engineer &amp; software developer</span></span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" data-nav aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="button button-small" href="https://wa.me/qr/SLAMC3KZSONPE1" target="_blank" rel="noopener noreferrer">Let’s talk <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
     </header>
-
-    <main class="px-[5%] lg:px-[10%] py-8">
-
-        <section id="about" class="">
-            
-            <div class="my-14 mx-auto sm:w-[90%] w-[100%] gap-10 flex flex-col md:flex-row items-center">
-                <div class="w-[60%] md:w-[80%] xl:w-[25%] sm:mb-0 mb-8">
-                    <img class="fill-current" src="./img/Profile-pic.jpg" alt="Profile">
-                </div>
-                <div class="w-[100%]">
-                    <h3 class="font-bold text-xl text-orange-500 border-b border-orange-500 mb-8">About Me</h3>
-
-                    <p class="text-left">Hi again. I am a professional  <span class="text-orange-500">Frontend Developer</span> who is dependable and trained to work in high stress environments and stay calm under pressure with effective team work to produce the best result for you. I am seeking to leverage analytical skills and expertise in frontend tools to help you with your upcoming challenges.</p>
-                </div>
-            </div>
-
-            <!-- Skills -->
-            <div class="my-10 mx-auto flex flex-col-reverse md:flex-row w-[90%] gap-10 items-center">
-                <div class="w-[100%]">
-                    <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500 mb-8">Aquired Skills</h3>
-                    
-                    <p class="">I have worked and gained experience with industry standard frontend tools like HTML, Vanilla CSS, TailwindCSS, Bootstrap and JavaScript. I have learned through different unique experiences how to build a fully responsive website. I have learned so much from my experiences and would love to be a part of your success story. I am always eager to learn more because I love what I do, email me if you have anything in mind.
-                    </p>
-                </div>
-                
-                <div class="w-[70%] xl:w-[40%] md:w-[100%] sm:mb-0 mb-8">
-                    <img class="fill-current" src="./img/undraw_job_hunt_re_q203.svg" alt="Skills">
-                </div>
-            </div>
-            
-
-            <!-- What I do -->
-            <div class=" w-[90%] my-10 mx-auto gap-10 flex flex-col md:flex-row items-center">
-                
-                <div class="w-[70%] ">
-                    <img class="fill-current" src="./img/undraw_resume_re_hkth.svg" alt="cv-img">
-                </div>
-                
-                <div class="w-[100%]">
-                    <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500">What do I do exactly?</h3>
-                    
-                    <p class="my-10">Sometimes, I am asked this question, and the basic answer is <span class="text-orange-500">I build websites</span>. Single paged website, portfolio website, personal website, website for an event, business website, commercial, industrial and any other website, I build them all. So yeah, I build websites. When you need a website -because you're gonna need one someday- don't hesitate to reach out to me.</p>
-
-                    <!-- <button class=" uppercase border text-sm border-orange-500 px-4 py-2 rounded text-orange-500 font-bold hover:bg-orange-500 hover:text-gray-300 transition ease-out duration-500"><a href="">Download CV</a></button> -->
-                </div>
-
-            </div>
-        </section>
-
-        <section id="portfolio" class="py-4">
-
-            <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500">My Projects</h3>
-            <div class="flex flex-col md:flex-row mt-16 items-center">
-                <div class="md:w-[40%] w-[70%] my-8 overflow-hidden rounded-lg mx-4 hover:opacity-100 opacity-60 hover:scale-110 transition ease-out duration-500">
-                    <a target="_blank" href="https://riel101.github.io/Mailion/"><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="Mailion"></a>
-                    <p class="text-center font-semibold capitalize">
-                        Mailion
-                    </p>
-                </div>
-                <div class="md:w-[40%] w-[70%] my-8 overflow-hidden rounded-lg mx-4 hover:opacity-100 opacity-60 hover:scale-110 transition ease-out duration-500">
-                    <a target="_blank" href="https://frontend-bootcamp-h5xp.vercel.app/#"><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="frontend"></a>
-                    <p class="text-center font-semibold capitalize">Learn frontend</p>
-                </div>
-                <div class="md:w-[40%] w-[70%] my-8 overflow-hidden rounded-lg mx-4 hover:opacity-100 opacity-60 hover:scale-110 transition ease-out duration-500">
-                    <a target="_blank" href="https://riel101.github.io/iSmart/"><img class="fill-current box-border" src="./img/undraw_programming_re_kg9v.svg" alt="img"></a>
-                    <p class="text-center font-semibold capitalize">iSmart</p>
-                </div>
-            </div>
-            
-        </section>
-        
-
-        <section id="contact">
-            <div class="my-16">
-                <h3 class="font-bold text-lg text-orange-500 border-b border-orange-500 mb-8">Send Me a Message</h3>
-                <form class="text-center md:w-[70%] w-[100%] mx-auto flex flex-col justify-center">
-                    <div class="my-3 flex flex-col sm:flex-row justify-between">
-                        <input type="text" id="sender-name" name="sender-name" placeholder="Name" class="sm:w-[95%] sm:mr-[5%] sm:mb-0 mb-3 bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500" required>
-                        <input class="sm:w-[95%] sm:ml-[5%] bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none outline-1 focus:outline-2 outline-orange-500" type="email" id="sender-email" name="sender-email" placeholder="Email" required>
-                    </div>
-                    <textarea id="email-message" class="bg-gray-800 text-gray-300 px-3 py-2 rounded outline-none mb-6 outline-1 focus:outline-2 outline-orange-500 resize-none" name="email-message" cols="30" rows="10" placeholder="Your message..." required></textarea>
-                    <div>
-                        <input id="submitBtn" class="w-[50%] uppercase border text-sm border-orange-500 px-4 py-2 rounded text-orange-500 font-bold hover:bg-orange-500 hover:text-gray-300 cursor-pointer transition ease-out duration-500" type="submit" value="Send">
-                    </div>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <a href="#home" id="back-to-top" class="fixed hidden right-14 hover:text-gray-300 text-gray-800 bottom-24 p-2 hover:bg-orange-500 rounded animate-bounce cursor-pointer shadow-md shadow-gray-700 hover:animate-none bg-gray-300 transition duration-500">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
-          </svg>
-    </a>
-
-    <footer class="bg-gray-800 text-gray-300 text-sm text-center py-4">
-
-        <div class="my-4">
-            <p>Copyright &copy;<a class="text-orange-500" href="#home">Adeyemi Gabriel</a></p>
-            <p>Designed and developed by <a class="text-orange-500" href="#home">Adeyemi Gabriel</a></p>
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-heading">
+        <div class="hero-copy" data-hero-reveal>
+          <p class="availability"><span></span> Open to projects</p>
+          <h1 id="hero-heading">Software with<br>room to <em>breathe.</em></h1>
+          <p class="hero-description">Hi, I’m Gabriel. An AI engineer and software developer building useful AI tools, thoughtful websites, and automations that give you time back.</p>
+          <div class="hero-actions">
+            <a class="button" href="#work">View my work <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-
+        <figure class="hero-art" data-hero-reveal>
+          <div class="art-top">
+            <span>EXPLORATIONS IN OPEN SPACE</span>
+            <span aria-hidden="true">01</span>
+          </div>
+          <div class="sky-frame">
+            <img src="./img/air-study.webp" alt="A folded white paper airplane floating through an open blue sky" width="1000" height="1200" fetchpriority="high" data-motion-image>
+          </div>
+          <figcaption>
+            <span>Air study / 01</span>
+            <span>Paper, sky &amp; possibility.</span>
+          </figcaption>
+        </figure>
+      </section>
+      <div class="container hero-divider">
+        <span>SELECTED WORK, 2026</span>
+        <a href="#work" aria-label="Scroll to selected work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+      </div>
+      <section class="work-section container section-space" id="work" aria-labelledby="work-heading">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span>01 /</span> SELECTED WORK</p>
+            <h2 id="work-heading">A few things I’ve <em>built.</em></h2>
+          </div>
+          <p>AI tooling and web experiments.<br>From the first idea to the final detail.</p>
+        </div>
+        <article class="project project-featured" data-reveal>
+          <div class="project-visual project-garnio">
+            <div class="project-image-top">
+              <span>01 / GARNIO</span>
+              <span class="development-status">IN DEVELOPMENT</span>
+            </div>
+            <div class="garnio-brand">
+              <span class="garnio-symbol" aria-hidden="true">g.</span>
+              <h3>Garnio</h3>
+              <p>Your agents. Your tools.<br>A better connection.</p>
+            </div>
+            <div class="garnio-flow" aria-label="AI agent connects through Garnio to authorized app tools">
+              <span><i aria-hidden="true">✳</i>AI agent</span>
+              <b aria-hidden="true">→</b>
+              <span class="garnio-node">Garnio</span>
+              <b aria-hidden="true">→</b>
+              <span><i aria-hidden="true">⊞</i>Your tools</span>
+            </div>
+            <p class="garnio-caption">CONNECT · AUTHORIZE · BUILD</p>
+          </div>
+          <div class="project-details">
+            <div>
+              <h3>Garnio <span class="project-badge">IN DEVELOPMENT</span></h3>
+              <p>A platform connecting AI agents to tools through account-connected MCP servers. An agent can use authorized tools in the apps your team already uses.</p>
+            </div>
+            <span class="project-type">AI TOOLING / MCP</span>
+          </div>
+        </article>
+        <div class="project-grid">
+          <article class="project" data-reveal>
+            <a class="project-visual project-bootcamp" href="https://frontend-bootcamp-h5xp.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Frontend Bootcamp, opens in a new tab"><div class="project-image-top"><span>02 / FRONTEND BOOTCAMP</span><span>↗</span></div><img src="./img/bootcamp.webp" alt="Preview of the Frontend Bootcamp learning website" width="1200" height="900" loading="lazy"></a>
+            <div class="project-details">
+              <div>
+                <h3><a href="https://frontend-bootcamp-h5xp.vercel.app/" target="_blank" rel="noopener noreferrer">Frontend Bootcamp <span aria-hidden="true">↗</span></a></h3>
+                <p>A responsive course landing page demo.</p>
+              </div>
+            </div>
+          </article>
+          <article class="project" data-reveal>
+            <a class="project-visual project-articulator" href="https://github.com/Riel101/X_articulate" target="_blank" rel="noopener noreferrer" aria-label="View X Articulator source on GitHub, opens in a new tab"><div class="project-image-top"><span>03 / X ARTICULATOR</span><span>PROTOTYPE ↗</span></div><div class="articulator-art"><span class="articulator-mark" aria-hidden="true">✳</span><h4>From an idea.<br>To the right <em>words.</em></h4><div class="articulator-steps"><span>Research</span><span aria-hidden="true">→</span><span>Draft</span><span aria-hidden="true">→</span><span>Refine</span></div></div></a>
+            <div class="project-details">
+              <div>
+                <h3><a href="https://github.com/Riel101/X_articulate" target="_blank" rel="noopener noreferrer">X Articulator <span aria-hidden="true">↗</span></a></h3>
+                <p>An experimental Python and LangChain writing agent, using Tavily search and NVIDIA Nemotron to draft X posts.</p>
+              </div>
+            </div>
+          </article>
+          <article class="project project-agent-da" data-reveal>
+            <div class="project-visual agent-da-visual">
+              <div class="project-image-top"><span>04 / AGENT DA</span><span>ILLUSTRATIVE WORKFLOW</span></div>
+              <div class="agent-da-layout">
+                <div class="agent-da-goal"><span class="example-label">THE LONG-TERM GOAL</span><p>Launch my<br><em>first portfolio.</em></p><span class="agent-da-horizon">One goal. A little progress each day.</span></div>
+                <div class="agent-da-day"><span class="example-label">TODAY’S PLAN / DAY 03</span><h4>Make your work visible.</h4><ol><li>Choose two projects to feature.</li><li>Write a short description for each.</li><li>Pick one screenshot per project.</li></ol><p>Small tasks. A clear next step.</p></div>
+              </div>
+            </div>
+            <div class="project-details"><div><h3><a href="https://github.com/Riel101/agent_da" target="_blank" rel="noopener noreferrer">Agent DA <span aria-hidden="true">↗</span></a></h3><p>Set a goal and deadline, get a day-by-day plan, and check off today’s tasks. A React interface backed by Python, LangGraph and FastAPI.</p></div><span class="project-type">AI AGENT / DAILY PLANNING</span></div>
+          </article>
+        </div>
+      </section>
+      <section class="services-section container" aria-labelledby="services-heading">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span>→ /</span> HOW I CAN HELP</p>
+            <h2 id="services-heading">Less friction.<br>More <em>possibility.</em></h2>
+          </div>
+        </div>
+        <div class="services-grid">
+          <article data-reveal>
+            <span class="service-number">01</span>
+            <h3>AI tools &amp; agents</h3>
+            <p>Turn an AI idea into software that works with your data, tools, and existing workflows.</p>
+          </article>
+          <article data-reveal>
+            <span class="service-number">02</span>
+            <h3>Integrations &amp; automation</h3>
+            <p>Connect APIs and automate repetitive tasks so your team can focus on the work that matters.</p>
+          </article>
+          <article data-reveal>
+            <span class="service-number">03</span>
+            <h3>Web development</h3>
+            <p>Build responsive websites and web interfaces with clear layouts and careful attention to the details.</p>
+          </article>
+        </div>
+      </section>
+      <section class="outcomes-section container" aria-labelledby="outcomes-heading">
+        <div class="outcomes-copy" data-reveal>
+          <p class="eyebrow"><span>→ /</span> WHAT YOU’LL GET</p>
+          <h2 id="outcomes-heading">A website that does<br>more with <em>every enquiry.</em></h2>
+          <p>I build the website your customers see and the AI workflow behind it. You work directly with one developer, from the first conversation to a working handover.</p>
+          <p>That can mean a clear place to explain your business, an easier way to capture requests, and a useful starting point for your team’s next conversation.</p>
+          <a class="text-link" href="#contact">Let’s talk about your workflow <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="enquiry-example" data-reveal>
+          <p class="example-label">ONE POSSIBLE WORKFLOW</p>
+          <div class="enquiry-message"><h3>A customer writes on your website</h3><p>“Could you make a chocolate cake for 30 people for our Saturday party? We can collect it.”</p></div>
+          <p class="enquiry-transition"><span aria-hidden="true">↓</span> AI organises the request</p>
+          <div class="enquiry-brief"><h3>A structured brief for your review</h3><dl><div><dt>Request</dt><dd>Chocolate cake</dd></div><div><dt>Servings</dt><dd>30 people</dd></div><div><dt>Collection</dt><dd>Customer will collect</dd></div><div><dt>To confirm</dt><dd>Exact Saturday date and allergies</dd></div></dl><p class="review-note">You review the details and decide how to respond.</p></div>
+        </div>
+      </section>
+      <section class="about-section" id="about" aria-labelledby="about-heading">
+        <div class="container about-layout">
+          <div class="about-portrait" data-reveal>
+            <div class="portrait-frame">
+              <img src="./img/gabriel-portrait.jpg" alt="Adeyemi Gabriel" width="1254" height="1254" loading="lazy">
+            </div>
+            <p><span>ADEYEMI GABRIEL</span><span>A PERSON BEHIND THE PIXELS ↗</span></p>
+          </div>
+          <div class="about-copy" data-reveal>
+            <p class="eyebrow"><span>02 /</span> A LITTLE ABOUT ME</p>
+            <h2 id="about-heading">Useful software starts<br>with <em>understanding.</em></h2>
+            <p>I’m Gabriel, an AI engineer and software developer who enjoys turning everyday friction into useful software.</p>
+            <p>My work spans AI agents, API integrations, workflow automation, and web development. I care about how the pieces connect and how they feel to use. I bring a calm, collaborative approach, a focus on practical problems, and a willingness to keep learning.</p>
+            <div class="skills">
+              <h3>MY EVERYDAY TOOLKIT</h3>
+              <ul aria-label="Development skills">
+                <li>
+                  Python
+                </li>
+                <li>
+                  Go
+                </li>
+                <li>
+                  JavaScript
+                </li>
+                <li>
+                  TypeScript
+                </li>
+                <li>
+                  LangChain
+                </li>
+                <li>
+                  MCP
+                </li>
+                <li>
+                  API integrations
+                </li>
+                <li>
+                  Tailwind CSS
+                </li>
+              </ul>
+            </div>
+            <a class="text-link" href="https://x.com/Gab_Riel101" target="_blank" rel="noopener noreferrer">Find me on X <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section container" id="contact" aria-labelledby="contact-heading" data-reveal>
+        <p class="eyebrow"><span>03 /</span> HAVE SOMETHING IN MIND?</p>
+        <div class="contact-row">
+          <div>
+            <h2 id="contact-heading">Let’s make<br>something <em>good.</em></h2>
+            <p>An AI idea, a workflow to simplify, or a new website.<br>I’d love to hear what you’re thinking.</p>
+          </div>
+          <a class="contact-circle" href="https://wa.me/qr/SLAMC3KZSONPE1" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span>Let’s talk</a>
+        </div>
+        <div class="contact-links">
+          <span class="availability"><span></span> Open to projects &amp; collaborations</span>
+          <div>
+            <a href="https://wa.me/qr/SLAMC3KZSONPE1" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+            <a href="https://x.com/Gab_Riel101" target="_blank" rel="noopener noreferrer">X ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <a class="footer-name" href="#home">Adeyemi Gabriel<span>AI engineer &amp; software developer</span></a>
+      <p>© <span data-year>2026</span> Adeyemi Gabriel</p>
+      <a class="back-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
-
-    <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>
